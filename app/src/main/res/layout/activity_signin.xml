@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A24E5156"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/gymd"
+        android:layout_width="wrap_content"
+        android:layout_height="190dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/gym"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/silver"
+        app:layout_constraintTop_toBottomOf="@id/gymd"
+        />
+
+
+    <!-- USERNAME -->
+
+    <EditText
+        android:id="@+id/username"
+        android:backgroundTint="@color/white"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:textColorHint="@color/gold"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="230dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- EMAIL -->
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/gold"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <!-- PASSWORD -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:backgroundTint="@color/white"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="@color/gold"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- PHONE -->
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:hint="Mobile Phone"
+        android:textColorHint="@color/gold"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:inputType="phone"
+        android:textSize="18sp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- GENDER -->
+    <RadioGroup
+        android:id="@+id/genderGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Male"
+            android:textSize="25sp"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            />
+    </RadioGroup>
+
+    <!-- BUTTON -->
+    <Button
+        android:id="@+id/signInBtn"
+        android:layout_width="140dp"
+        android:layout_height="65dp"
+        android:text="Sign In"
+        android:textSize="20dp"
+        android:padding="15dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/navyy"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/genderGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- LOGIN TEXT -->
+    <TextView
+        android:id="@+id/t5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Have an account?"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/signInBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@android:color/holo_orange_light"/>
+
+    <!-- LOGIN LINK -->
+    <Button
+        android:id="@+id/logLink"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/navyy"
+        android:text="LOG-IN"
+        android:textStyle="bold|italic"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/t5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".leaderBoard"
+    android:background="@color/gg"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/zebra"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="102dp" />
+
+
+    <TextView
+        android:id="@+id/leadersss"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:background="@drawable/theirs"
+        android:backgroundTint="@color/navyy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Leader-BOArd"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:fontFamily="serif-monospace"
+        android:textSize="38dp"
+        android:textColor="@color/lemo"
+        />
+
+    <TextView
+        android:id="@+id/bestScore"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/bestscore"
+        android:backgroundTint="#E7AF3F"
+        android:fontFamily="serif-monospace"
+        android:text="Best score"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/rectangles"
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:background="@drawable/cornered"
+        android:backgroundTint="@color/navyy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <View
+        android:id="@+id/firstTopper"
+        android:layout_width="310dp"
+        android:layout_height="80dp"
+        android:background="@drawable/theirs"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/rectangles"
+        app:layout_constraintStart_toStartOf="@id/rectangles"
+        app:layout_constraintTop_toTopOf="@+id/rectangles"
+        android:layout_marginTop="40dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/firstcup"
+        app:layout_constraintBottom_toBottomOf="@+id/firstTopper"
+        app:layout_constraintEnd_toEndOf="@+id/firstTopper"
+        app:layout_constraintTop_toTopOf="@+id/firstTopper"
+        app:layout_constraintStart_toStartOf="@+id/firstTopper"
+        app:layout_constraintVertical_bias="0.566"
+        app:layout_constraintHorizontal_bias="1"/>
+
+    <View
+        android:id="@+id/secondTopper"
+        android:layout_width="310dp"
+        android:layout_height="80dp"
+        android:background="@drawable/theirs"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/rectangles"
+        app:layout_constraintStart_toStartOf="@id/rectangles"
+        app:layout_constraintTop_toTopOf="@+id/firstTopper"
+        android:layout_marginTop="120dp"
+        />
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/secondtrophy"
+        app:layout_constraintBottom_toBottomOf="@+id/secondTopper"
+        app:layout_constraintEnd_toEndOf="@+id/secondTopper"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/secondTopper"
+        app:layout_constraintTop_toTopOf="@+id/secondTopper"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <View
+        android:id="@+id/thirdTopper"
+        android:layout_width="310dp"
+        android:layout_height="80dp"
+        android:background="@drawable/theirs"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/rectangles"
+        app:layout_constraintStart_toStartOf="@id/rectangles"
+        app:layout_constraintTop_toTopOf="@+id/secondTopper"
+        android:layout_marginTop="120dp"
+        />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/thirdtrophy"
+        app:layout_constraintBottom_toBottomOf="@+id/thirdTopper"
+        app:layout_constraintEnd_toEndOf="@+id/thirdTopper"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/thirdTopper"
+        app:layout_constraintTop_toTopOf="@+id/thirdTopper"
+        app:layout_constraintVertical_bias="0.6" />
+
+
+
+
+    <View
+        android:id="@+id/youRank"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:background="@drawable/theirs"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/rectangles"
+        app:layout_constraintStart_toStartOf="@id/rectangles"
+        app:layout_constraintTop_toTopOf="@+id/thirdTopper"
+        android:layout_marginTop="110dp"
+        />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/yourtrophy"
+        app:layout_constraintBottom_toBottomOf="@+id/youRank"
+        app:layout_constraintEnd_toEndOf="@+id/youRank"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/youRank"
+        app:layout_constraintTop_toTopOf="@+id/youRank"
+        app:layout_constraintVertical_bias="0.6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

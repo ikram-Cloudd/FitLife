@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/gtr"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/gg">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitXY"
+    android:src="@drawable/zebra"/>
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:backgroundTint="@color/white"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:id="@+id/email"
+        android:textColorHint="@color/white"
+        android:textSize="25sp"
+        android:inputType="textEmailAddress"
+        android:gravity="center"
+        android:textStyle="italic"
+        app:layout_constraintTop_toTopOf="@+id/gtr"
+        app:layout_constraintBottom_toBottomOf="@+id/gtr"
+        app:layout_constraintStart_toStartOf="@+id/gtr"
+        app:layout_constraintEnd_toEndOf="@+id/gtr"
+        app:layout_constraintVertical_bias="0.363"
+
+        />
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:id="@+id/pswd"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/gtr"
+        app:layout_constraintEnd_toEndOf="@+id/gtr"
+        app:layout_constraintStart_toStartOf="@+id/gtr"
+        app:layout_constraintTop_toTopOf="@+id/email"
+        app:layout_constraintVertical_bias="0.23"
+        />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="40dp"
+        android:layout_marginHorizontal="120dp"
+        android:text="LOG-IN"
+        android:id="@+id/logLink"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:backgroundTint="@color/navyy"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gtr"
+        app:layout_constraintEnd_toEndOf="@+id/gtr"
+        app:layout_constraintStart_toStartOf="@+id/gtr"
+        app:layout_constraintTop_toBottomOf="@+id/pswd"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="1.2"
+
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+>
+    <data>
+        <variable
+            name="weltxt"
+            type="String" />
+    </data>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrolledWeek"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B1B1B"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/theirs"
+        android:backgroundTint="#D3272A33"
+        android:gravity="center"
+        android:text="@{weltxt}"
+        android:textColor="@color/lemo"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timework"
+        android:layout_width="160dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/theirs"
+        android:backgroundTint="#B43A3B3C"
+        android:gravity="center_horizontal"
+        android:text="    Total Workout Time"
+        android:textColor="@color/lemo"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/banner" />
+
+    <TextView
+        android:id="@+id/calories_box"
+        android:layout_width="160dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/theirs"
+        android:backgroundTint="#B43A3B3C"
+        android:gravity="center_horizontal"
+        android:text="Calories"
+        android:textColor="@color/lemo"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/banner" />
+
+    <TextView
+        android:id="@+id/steps"
+        android:layout_width="160dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/theirs"
+        android:backgroundTint="#B43A3B3C"
+        android:gravity="center_horizontal"
+        android:text="  FOOT
+
+    STEPS"
+        android:textColor="@color/lemo"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/timework"
+        app:layout_constraintTop_toBottomOf="@id/timework" />
+
+    <TextView
+        android:id="@+id/water_box"
+        android:layout_width="160dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/theirs"
+        android:backgroundTint="#B43A3B3C"
+        android:gravity="center_horizontal"
+        android:text="Water"
+        android:textColor="@color/lemo"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/calories_box"
+        app:layout_constraintTop_toBottomOf="@id/calories_box" />
+
+    <TextView
+        android:id="@+id/table"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/theirs"
+        android:backgroundTint="#B43A3B3C"
+        android:text="WEEKLY REPORT"
+        android:gravity="center_horizontal"
+        android:textColor="@color/lemo"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/steps" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+</layout>
